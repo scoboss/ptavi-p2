@@ -5,18 +5,15 @@
 #y la division, excluido entre 0.
 
 import sys
+from calcoo import Calculadora 
+
+#importamos clase calculadora del anterior ejercicio para no repetir el codigo.
+
 
 #definimos numero como antes para que acepte tanto int como float
 
-def numero(operando):
+def definonumero(operando):
     return float(operando)
-
-class Calculadora():
-
-    def plus(self, num1, num2):
-        return num1 + num2
-    def minus(self, num1, num2):
-        return num1 - num2
 
 class CalculadoraHija(Calculadora):
 
@@ -51,8 +48,8 @@ if __name__ == "__main__":
     except IndexError:
         sys.exit("Error los parametros son 3; numero operador numero")
     try:
-        num1 = numero(numero1)
-        num2 = numero(numero2)
+        num1 = definonumero(numero1)
+        num2 = definonumero(numero2)
     except ValueError:
         sys.exit("Error:Non numerical parameters")
     print (resultado(num1, operacion, num2))
