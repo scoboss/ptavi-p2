@@ -13,20 +13,13 @@ def minus(op1, op2):
     """ Function to substract the operands """
     return op1 - op2
 
-def mult(op1, op2):
-	"""Function to multi the operands"""
-	return op1 * op2
-
-def divid(op1, op2):
-	return op1 / op2
-
 
 if __name__ == "__main__":
 
 
     try:
-        operando1 = int(sys.argv[1])
-        operando2 = int(sys.argv[3])
+        operando1 = float(sys.argv[1])
+        operando2 = float(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
@@ -34,10 +27,6 @@ if __name__ == "__main__":
         result = plus(operando1, operando2)
     elif sys.argv[2] == "resta":
         result = minus(operando1, operando2)
-	elif sys.argv[2] == "por":
-		result = mult(operando1, operando2)
-	elif sys.argv[2] == "division":
-		result = divid(operando1, operando2)
     else:
         sys.exit('Operación sólo puede ser sumar o restar.')
 
