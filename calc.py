@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-#modificamos en clase para probar como hariamos la multiplicacion y la division 
+#modificamos en clase para probar como hariamos la multiplicacion y la division
 #pero para la practica lo entregaremos tal cual nos pide el guion de esta.
 
 import sys
