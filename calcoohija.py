@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-#Continuamos programando la calculadora añadiendo ahora la multiplicacion 
+#Continuamos programando la calculadora añadiendo ahora la multiplicacion
 #y la division, excluido entre 0.
 
 import sys
-from calcoo import Calculadora 
+from calcoo import Calculadora
 
 #importamos clase calculadora del anterior ejercicio para no repetir el codigo.
 
@@ -15,15 +15,18 @@ from calcoo import Calculadora
 def definonumero(operando):
     return float(operando)
 
+
 class CalculadoraHija(Calculadora):
 
     def producto(self, num1, num2):
         return num1 * num2
+
     def division(self, num1, num2):
         try:
             return num1 / num2
         except ZeroDivisionError:
             sys.exit("Division by zero is not allowed")
+
 
 def resultado(num1, operacion, num2):
     result = CalculadoraHija()
@@ -53,8 +56,3 @@ if __name__ == "__main__":
     except ValueError:
         sys.exit("Error:Non numerical parameters")
     print (resultado(num1, operacion, num2))
-
-
-
-
-
