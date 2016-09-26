@@ -4,12 +4,8 @@
 #modificamos en clase para probar como hariamos la multiplicacion y la division 
 #pero para la practica lo entregaremos tal cual nos pide el guion de esta.
 
-
-#modificamos en clase para miultiplicar y dividir pero para la practica la 
-#entregaremos como al inicio.
-
-
 import sys
+
 
 def plus(op1, op2):
     """ Function to sum the operands """
@@ -22,8 +18,6 @@ def minus(op1, op2):
 
 
 if __name__ == "__main__":
-
-
     try:
         operando1 = float(sys.argv[1])
         operando2 = float(sys.argv[3])
