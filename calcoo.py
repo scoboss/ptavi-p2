@@ -3,12 +3,18 @@
 
 import sys
 
-#definimos numero para que los operandos se efectuen en float, aunque sean sumas y restas si efectuamos las operacion en int si introducimos un float nos da error. Mientras que si usamos float podemos introducirlo en int y sigue funcionando.
+#definimos numero para que los operandos se efectuen en float, 
+#aunque sean sumas y restas si efectuamos las operacion en int 
+#si introducimos un float nos da error. Mientras que si usamos 
+#float podemos introducirlo en int y sigue funcionando.
 
 def numero(operando):
     return float(operando)
 
-#la clase calculadora va tener los metodos suma y resta, que en objetos definimos como funciones. Como seguimos del ejercicio anterior (calc.py) continuamos con el nombre de plus y minus.
+#la clase calculadora va tener los metodos suma y resta, 
+#que en objetos definimos como funciones. 
+#Como seguimos del ejercicio anterior (calc.py) continuamos con el nombre 
+#de plus y minus.
 
 class Calculadora():
     def plus(self, num1, num2):
@@ -16,7 +22,8 @@ class Calculadora():
     def minus(self, num1, num2):
         return num1 - num2
 
-#como nos pide el ejercicio tenemos que tener un programa principal el cual tome los parametros e instancie objeto de la clase Calculadora.
+#como nos pide el ejercicio tenemos que tener un programa principal el cual 
+#tome los parametros e instancie objeto de la clase Calculadora.
 
 def resultado(num1, operacion, num2):
     result = Calculadora()
