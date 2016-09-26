@@ -7,6 +7,11 @@ class Clase(ClaseMadre):
   def __init__(self, valor):
     "Esto es el método iniciliazador"
     self.atributo = valor
+    self.imprime()
+
+  def imprime(self):
+    print(valor)
+    print(self.atributo)
 
 if __name__ == "__main__":
   objeto = Clase("pepe") # Creo un objeto de la clase Clase
