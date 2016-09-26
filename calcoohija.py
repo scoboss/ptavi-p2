@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-#Continuamos programando la calculadora añadiendo ahora la multiplicacion y la division
+#Continuamos programando la calculadora añadiendo ahora la multiplicacion y la division, excluido entre 0.
 
 import sys
 
