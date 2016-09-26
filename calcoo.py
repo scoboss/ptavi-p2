@@ -8,8 +8,9 @@ import sys
 #si introducimos un float nos da error. Mientras que si usamos 
 #float podemos introducirlo en int y sigue funcionando.
 
-def numero(operando):
+def definonumero(operando):
     return float(operando)
+
 
 #la clase calculadora va tener los metodos suma y resta, 
 #que en objetos definimos como funciones. 
@@ -43,8 +44,8 @@ if __name__ == "__main__":
     except IndexError:
         sys.exit("Error los parametros son 3; operador numero operador")
     try:
-        num1 = numero(numero1)
-        num2 = numero(numero2)
+        num1 = definonumero(numero1)
+        num2 = definonumero(numero2)
     except ValueError:
         sys.exit("Error: Non numerical parameters")
     print (resultado(num1, operacion, num2))
