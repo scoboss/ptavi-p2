@@ -3,6 +3,8 @@
 
 import sys
 
+#modificamos en clase para miultiplicar y dividir pero para la practica la entregaremos como al inicio.
+
 
 def plus(op1, op2):
     """ Function to sum the operands """
