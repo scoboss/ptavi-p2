@@ -33,13 +33,13 @@ def resultado(num1, operacion, num2):
         solucion = result.plus(num1, num2)
     elif (operacion == "resta"):
         solucion = result.minus(num1, num2)
-    elif (operacion == "por"):
+    elif (operacion == "multiplica"):
         solucion = result.producto(num1, num2)
-    elif (operacion == "entre"):
+    elif (operacion == "divide"):
 
         solucion = result.division(num1, num2)
     else:
-        sys.exit("Error solo suma, resta, por, entre")
+        sys.exit("Error solo suma, resta, multiplica, divide")
     return solucion
 
 if __name__ == "__main__":
